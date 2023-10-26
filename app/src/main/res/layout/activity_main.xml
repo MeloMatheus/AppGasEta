@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context=".view.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="@string/txt_tittle"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_usuario"
+                android:layout_width="133dp"
+                android:layout_height="133dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@mipmap/ic_launcher"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_litro_gasolina"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/txt_litro_gsolina"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/edit_litro_etanol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/txt_litro_etanol"
+                    android:inputType="numberDecimal" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <Button
+                android:id="@+id/btn_calcular"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/btn_calcular"/>
+
+            <TextView
+                android:id="@+id/txt_resultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="28sp"
+                android:text="@string/txt_resultado"
+                android:gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/btn_limpar"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:text="@string/btn_limpar"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/btn_salvar"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:enabled="false"
+                android:text="@string/btn_salvar" />
+
+            <Button
+                android:id="@+id/btn_finalizar"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:text="@string/btn_finalizar"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>
